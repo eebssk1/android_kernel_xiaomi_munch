@@ -705,7 +705,7 @@ KBUILD_AFLAGS   += -O3
 else ifeq ($(cc-name),gcc)
 KBUILD_CFLAGS   += -O3
 KBUILD_AFLAGS   += -O3
-KBUILD_LDFLAGS  += -Wl,-O3,--relax
+KBUILD_LDFLAGS  += -O3
 else
 KBUILD_CFLAGS   += -O2
 KBUILD_AFLAGS   += -O2
