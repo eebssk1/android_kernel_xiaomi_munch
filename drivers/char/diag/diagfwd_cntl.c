@@ -1534,7 +1534,7 @@ void diag_send_hw_accel_status(uint8_t peripheral)
 	for (feature = 0; feature < DIAGID_V2_FEATURE_COUNT; feature++) {
 		if (!driver->diag_hw_accel[feature])
 			continue;
-		for (pd = 0; pd <= MAX_PERIPHERAL_UPD; pd++) {
+		for (pd = 0; pd < MAX_PERIPHERAL_UPD; pd++) {
 			if (!pd) {
 				diagid_struct = &fwd_info->root_diag_id;
 				diagid_mask_bit =

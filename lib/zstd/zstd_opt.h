@@ -536,7 +536,7 @@ void ZSTD_compressBlock_opt_generic(ZSTD_CCtx *ctx, const void *src, size_t srcS
 				continue;
 
 			mlen = opt[cur].mlen;
-			if (opt[cur].off > ZSTD_REP_MOVE_OPT) {
+			if (opt[cur].off >= ZSTD_REP_MOVE_OPT) {
 				opt[cur].rep[2] = opt[cur - mlen].rep[1];
 				opt[cur].rep[1] = opt[cur - mlen].rep[0];
 				opt[cur].rep[0] = opt[cur].off - ZSTD_REP_MOVE_OPT;

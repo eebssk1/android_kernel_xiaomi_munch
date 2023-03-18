@@ -359,7 +359,7 @@ static void cp_get_batt_capacity(void)
 	ret = power_supply_get_property(psy,
 			POWER_SUPPLY_PROP_CAPACITY, &val);
 	if (!ret)
-		pm_state.capacity = val.intval;
+		pm_state.capacity = (int)val.intval;
 	pr_info("capacity %d\n", pm_state.capacity);
 }
 
