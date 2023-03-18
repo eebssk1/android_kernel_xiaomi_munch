@@ -499,7 +499,7 @@ static inline u##sz __cmpxchg_case_##name##sz(volatile void *ptr,	\
 	"	mov	" #w "30, %" #w "[old]\n"			\
 	"	cas" #mb #sfx "\t" #w "30, %" #w "[new], %[v]\n"	\
 	"	mov	%" #w "[ret], " #w "30")			\
-	: [ret] "+r" (x0), [v] "+Q" (*(unsigned long *)ptr)		\
+	: [ret] "+r" (x0), [v] "+Q" (*(u##sz *)ptr)		\
 	: [old] "r" (x1), [new] "r" (x2)				\
 	: __LL_SC_CLOBBERS, ##cl);					\
 									\
