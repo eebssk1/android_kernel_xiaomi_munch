@@ -1509,7 +1509,7 @@ static int usbpd_pm_fc2_charge_algo(struct usbpd_pm *pdpm)
 		pdpm->unsupport_pps_ta_check_count++;
 		if (pdpm->unsupport_pps_ta_check_count > 3)
 			unsupport_pps_status = true;
-			pr_info("unsupport_pps_status:%d\n", unsupport_pps_status);
+		pr_info("unsupport_pps_status:%d\n", unsupport_pps_status);
 	} else {
 		pdpm->unsupport_pps_ta_check_count = 0;
 	}

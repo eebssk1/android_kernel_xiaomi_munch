@@ -61,8 +61,8 @@ struct pid_entry {
 	struct concurrent_times *concurrent_times;
 	struct hlist_node hash;
 	unsigned int max_state;
-	u64 time_in_state[0];
 	struct rcu_head rcu;
+	u64 time_in_state[];
 };
 
 /**
