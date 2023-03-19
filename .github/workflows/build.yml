@@ -5,7 +5,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the R branch
   push:
     branches:
-        - arrow-13.0
+        - t
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
