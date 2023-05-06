@@ -2,7 +2,7 @@
 
 sudo apt-get install -y libelf-dev libssl-dev dwarves bc jitterentropy-rngd device-tree-compiler curl python2
 
-curl -L "https://github.com/eebssk1/arm-gcc/releases/download/ba75d2cd/arm-gcc.tgz" | tar --gz -xf -
+curl -L "https://github.com/eebssk1/arm-gcc/releases/download/553659bc/arm-gcc.tgz" | tar --gz -xf -
 
 export PATH=${PWD}/arm-gcc/aarch64-linux-musl/bin:${PWD}/arm-gcc/arm-linux-musleabi/bin:$PATH
 
